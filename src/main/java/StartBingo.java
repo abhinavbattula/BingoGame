@@ -52,7 +52,7 @@ public class StartBingo {
         simulateGame(inputData, playerCount, cardRows, cardColumns, numberUpperRange, numberLowerRange, numbersPerRow);
 
     }
-
+    //used to simulate the bingo game
     private static void simulateGame(Scanner inputData, int playerCount, int cardRows, int cardColumns, int numberUpperRange, int numberLowerRange, int numbersPerRow) {
 
         Play play = new Play();

@@ -31,6 +31,7 @@ public class Play {
         gameDetails.getPlayerProgress().put(player, progress);
     }
 
+    //contains the entire game play and tracks the game status
     public void playGame(GameDetails gameDetails, Player player, int input) {
 
         if (gameDetails.getPlayerProgress().get(player).get(Utils.getFullHouse()).contains(input)) {
@@ -77,6 +78,7 @@ public class Play {
 
     }
 
+    //used to print the cards
     private  void printPlayerCard(int[][] card, int player){
         System.out.println("Player#"+player+" Card:");
         System.out.println();

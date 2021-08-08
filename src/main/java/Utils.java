@@ -15,6 +15,7 @@ public class Utils {
     private static String NOTHING_WON = "Nothing";
     private static boolean terminateGame= Boolean.FALSE;
 
+    //computes the full house numbers from the player card
     public static Set<Integer> computeFullHouse(List<List<Integer>> card) {
         Set<Integer> fullHouse = new HashSet();
         for (int i = 0; i < card.size(); i++) {
@@ -25,11 +26,13 @@ public class Utils {
         return fullHouse;
     }
 
+    //computes the Top line numbers from the player card
     public static Set<Integer> computeTopLine(List<List<Integer>> card) {
 
         return new HashSet<>(card.get(0));
     }
 
+    //converts the card to list to compute the all possible winning combinations in the later game play
     public static List<List<Integer>> convertToList(int[][] card) {
         List<List<Integer>> convertedCard = new ArrayList<>();
         for (int i = 0; i < card.length; i++) {
